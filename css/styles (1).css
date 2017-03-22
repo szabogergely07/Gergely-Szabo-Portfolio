@@ -1,0 +1,443 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 150px;
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+body {
+/*	padding-top: 8%;*/
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+
+.btn a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h2, h3, p, li, a {
+	font-family: 'Alegreya', serif;
+}
+
+
+/*h1, h2, h3, a {
+	font-family: PT Sans, Futura, Helvetica, Arial, sans-serif;
+}
+
+p, li, .nav [href] {
+	font-family: Roboto Slab, Libre Baskerville, Georgia, Times New Roman, serif;
+}*/
+
+/* NAVBAR */
+
+.pull-right a {
+	font-weight: bold;
+}
+
+.Home a {
+	text-decoration: none;
+}
+.Home a span {
+	color: black;
+	/*font-family: Libre Baskerville, Georgia, Times New Roman, serif;*/
+	text-decoration: none;
+	transition: color 600ms;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.Home a span:hover {
+	color: #58595b;
+}
+
+#color-change {
+	color: #58595b;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+	transition: color 600ms;
+	font-size: 1.3em;
+}
+
+.navbar-inverse .navbar-collapse {
+	padding-top: 15px;
+}
+
+.navbar {
+	background: rgba(210, 168, 74, 0.7);
+	min-height: 60px;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #58595b;
+}
+
+#github-cat, #github-cat2 {
+	width: 50px;
+	height: 50px;
+	margin-right: 50px;
+}
+
+.pull-right a {
+	/*border-top: 1px solid #58595b;*/
+	border-bottom: 2px solid #58595b;
+	transition: border-top 1s;
+	margin-right: 10px;
+}
+
+.pull-right a:hover {
+	/*border-top: 1px solid black;*/
+	border-bottom: 2px solid black;
+}
+
+.anchor {
+	padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	color: black;
+}
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: black;
+}
+
+
+
+/* NAVBAR END */
+
+/* CAROUSEL */
+
+@media(max-width: 415px) {
+	.carousel-caption h3 {
+		font-size: 1.3em;
+	}
+
+	.carousel-caption p {
+		font-size: 1.0em;
+	}
+}
+
+@media(min-width: 768px) {
+	.carousel-caption h3 {
+		font-size: 2.8em;
+	}
+}
+
+.carousel-pos1 {
+	top: 15%;
+}
+
+.carousel-pos3 {
+	top: 10%;
+	left: -20%;
+}
+
+.carousel-pos2 {
+	top: 10%;
+	left: -10%;
+}
+
+/* CAROUSEL END */
+
+
+/* ABOUT PAGE */
+
+.btn-default {
+	background-color: rgba(190, 191, 193, 0.7);
+}
+
+.btn-default:hover {
+	background-color: rgba(210, 168, 74, 0.7);
+}
+
+#story-intro {
+	width: 80%;
+	margin: auto;
+	/*float: none;*/
+}
+
+@media (min-width: 767px) {
+	#story-intro {
+		width: 60%;
+	}
+}
+
+#story-intro-2 {
+	width: 100%;
+	margin: auto;
+	/*float: none;*/
+}
+
+@media (min-width: 767px) {
+	#story-intro-2 {
+		float: none;
+	}
+	.corr {
+	padding-left: 0;
+	}
+}
+
+.title-center {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.profile-pic {
+	margin-bottom: 25px;
+	border-radius: 30%;
+	width: 70%;
+	margin: auto;
+}
+
+.profile-text {
+	margin: auto;
+	text-align: justify;
+}
+
+@media (max-width: 767px) {
+	.profile-text {
+		width: 100%;
+	}
+}
+
+
+#item1 {
+	color: white;
+	/*font-family: Libre Baskerville, Georgia, Times New Roman, serif;*/
+}
+
+#social-contact {
+	width: 80%;
+}
+
+/* ABOUT END */
+
+
+/* CONTACT */
+
+#contactme {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+#contact-image {
+	background-image: url(../img/contact_image.jpg);
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.glyphicon-envelope:hover, .glyphicon-home:hover {
+	color: red;
+	font-size: 1.1em;
+}
+
+
+
+/* CONTACT FORM */
+
+
+.form-control {
+	width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.btn, .btn-success {
+	padding: 5px;
+	/*margin: 10px;*/
+}
+
+.control-label {
+	color: #58595b;
+}
+
+#visible-comment, #charCount, #visible-name, #visible-phone, #visible-email {
+	color: #58595b;
+	font-weight: bold;
+}
+
+@media (min-width: 767px) {
+	.form-horizontal {
+	  display: block;
+	  width: 40%;
+	  margin: 0 auto;
+	}
+}
+
+
+/* CONTACT END */
+
+
+
+/* WORK */
+
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+}
+
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 15%; /* position the text 15% away from the top */
+  left: 18%;
+  color: #fff;
+  /*font-family: Futura;*/
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  display: none;
+}
+
+.proj-title {
+  font-weight: 100;
+}
+
+/* WORK END */
+
+
+/* FAQ */
+
+
+#modalembed {
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+.resume-button {
+	margin: 0;
+	padding: 5px;
+	margin-right: 10%;
+}
+
+.modal-button {
+ /* float: right;*/
+  padding: 15px;
+}
+
+.panel-default>.panel-heading {
+	background-color: #58595b;
+}
+.panel-body {
+	background-color: #f2f2f2;
+}
+
+.panel .panel-default {
+	margin-bottom: 20px; 
+}
+
+.panel-group {
+	margin-top: 20px;
+}
+
+.panel-title a {
+	text-decoration: none;
+}
+
+.panel-title a h2 {
+	display: inline;
+	color: #f2f2f2;
+	padding: 10px;
+}
+
+.panel-body h3 {
+	text-align: justify;
+}
+
+.glyphicon-plus-sign {
+	color: #f2f2f2;
+}
+
+/* FAQ END */
+
+/* VIDEO */
+
+.embed-responsive, .embed-responsive-16by9 {
+	margin: 50px auto;
+}
+
+@media (min-width: 560px) {
+	.youtube-video {
+ 	width: 560px;
+    padding-bottom: 315px;
+}
+}
+
+/* VIDEO END */
+
+
+/* FOOTER */
+
+.fb-like { 
+	margin-left: 20px;
+	float: right;
+}
+
+/*.twitter-follow-button {
+	float: right;
+}*/
+
+@media (max-width: 503px) {
+	.fb-like, .twitter-footer {
+		float: left;
+	}
+
+	.fb-like {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.copyright {
+	padding-top: 30px;
+	clear: both;
+}
+
+/* FOOTER END */
+
+
+
