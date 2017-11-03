@@ -124,7 +124,7 @@ p, li, .nav [href] {
 }
 
 .anchor {
-	padding-top: 50px;
+	padding-top: 80px;
 }
 
 @media (max-width: 767px) {
@@ -312,10 +312,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* WORK */
 
+.trial {
+	height: 150px;
+}
+
 .work-img {
   display: block; /* needed to center the element with margin */
   margin: auto; /* center the image inside the column if it's smaller */
-  max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+  width: 300px; /* needs to be set to the width of your image files if they are relatively small */
   position: relative; /* is needed for .info position: absolute to work */
 }
 
@@ -335,6 +339,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .proj-title {
   font-weight: 100;
+}
+
+.modal-project {
+	text-align: left;
+}
+
+#modalButton {
+	background-color: #666666;
+	/*width: 300px;*/
+	border: 1px white;
+	color: white;
 }
 
 /* WORK END */

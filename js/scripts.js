@@ -130,10 +130,35 @@ for(var i = 0; i < works.length; ++i ) {
 $('#mywork').append("\
 	<div class='container anchor col-sm-6'>\
 	 <a href='" + works[i].url + "' class='work-img'>\
-      <img class='img-responsive' src='" + works[i].pic + "'>\
+      <img class='img-responsive trial' src='" + works[i].pic + "'>\
       <span class='info'><p class='proj-title'>Project:</p>" + works[i].title + "</span>\
-     </a>\
+    </a>\
+      <button type='button' class='btn btn-default btn-xs' id='modalButton' data-toggle='modal' data-target='#" + works[i].id + "'>\
+        Project details\
+      </button>\
+    <div class='modal fade' id='" + works[i].id + "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true'>\
+      <div class='modal-dialog' role='document'>\
+        <div class='modal-content'>\
+          <div class='modal-header'>\
+            <h2 class='modal-title' id='exampleModalLongTitle'>" + works[i].title + "</h2>\
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\
+              <span aria-hidden='true'>&times;</span>\
+            </button>\
+          </div>\
+          <div class='modal-body'>\
+            <h4>Specs and goals</h4>\
+            <p class='modal-project'>" + works[i].specs + "</p>\
+            <hr>\
+            <h4>Tools and methods used</h4>\
+            <p class='modal-project'>" + works[i].tools + "</p>\
+          </div>\
+          <div class='modal-footer'>\
+            <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\
+          </div>\
+        </div>\
+      </div>\
     </div>\
+  </div>\
 	");
 var images = $('#mywork img');
 if (i%2 === 0) {
@@ -142,9 +167,7 @@ $(images[i]).css('border', '2px solid black');
 		$(images[i]).css('border', '2px solid grey');		
 	};
 
-// $(".work-img"), (function () {
-// 	$(".info", this).css("color", "red");
-// });
+
 
 
 };
@@ -155,8 +178,8 @@ $(".work-img").mouseenter(function() {
 	$(".info", this).hide();
 });
 
-var testImage = $("#mywork a:first-child")
-$(testImage).css("height", "93px");
+
+
 
 // Change text color after name in navbar
 $(".Home a span").mouseenter(function() {
