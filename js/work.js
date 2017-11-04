@@ -30,6 +30,36 @@ var works = [
 		pic: "img/vr_scene.png",
 		url: "https://szabogergely07.github.io/VR-trial/",
 		id: "works5"
+	},
+	{
+		title: "LetsMeet - Meetup.com clone",
+		pic: "img/workinprogress.png",
+		url: "#",
+		id: "works6"
+	},
+	{
+		title: "Random Quote Machine",
+		pic: "img/workinprogress.png",
+		url: "#",
+		id: "works7"
+	},
+	{
+		title: "Local weather",
+		pic: "img/workinprogress.png",
+		url: "#",
+		id: "works8"
+	},
+	{
+		title: "Wikipedia Viewer",
+		pic: "img/workinprogress.png",
+		url: "#",
+		id: "works9"
+	},
+	{
+		title: "Nightlife Coordination",
+		pic: "img/workinprogress.png",
+		url: "#",
+		id: "works10"
 	}
   ];
 

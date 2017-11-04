@@ -312,8 +312,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* WORK */
 
-.trial {
+.project-images {
 	height: 150px;
+	display: block;
+	margin: 0 auto;
 }
 
 .work-img {

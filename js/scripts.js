@@ -130,11 +130,11 @@ for(var i = 0; i < works.length; ++i ) {
 $('#mywork').append("\
 	<div class='container anchor col-sm-6'>\
 	 <a href='" + works[i].url + "' class='work-img'>\
-      <img class='img-responsive trial' src='" + works[i].pic + "'>\
+      <img class='img-responsive project-images' src='" + works[i].pic + "'>\
       <span class='info'><p class='proj-title'>Project:</p>" + works[i].title + "</span>\
     </a>\
       <button type='button' class='btn btn-default btn-xs' id='modalButton' data-toggle='modal' data-target='#" + works[i].id + "'>\
-        Project details\
+        " + works[i].title + " project details\
       </button>\
     <div class='modal fade' id='" + works[i].id + "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true'>\
       <div class='modal-dialog' role='document'>\
