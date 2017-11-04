@@ -129,7 +129,7 @@ $(".form-control").css("border", "2px solid grey");
 for(var i = 0; i < works.length; ++i ) {
 $('#mywork').append("\
 	<div class='container anchor col-sm-6'>\
-	 <a href='" + works[i].url + "' class='work-img'>\
+	 <a href='" + works[i].url + "' target='_blank' class='work-img'>\
       <img class='img-responsive project-images' src='" + works[i].pic + "'>\
       <span class='info'><p class='proj-title'>Project:</p>" + works[i].title + "</span>\
     </a>\
