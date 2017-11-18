@@ -18,7 +18,7 @@ var works = [
 	{
 		title: "NailStudio",
 		pic: "img/nailweb.jpg",
-		url: "http://pearle-naildesign.bitballoon.com/",
+		url: "http://pearle-nail.bitballoon.com/",
 		id: "works3"
 	},
 	{
