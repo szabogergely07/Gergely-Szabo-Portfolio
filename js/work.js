@@ -4,14 +4,16 @@ var works = [
 		pic: "img/bikewien.png",
 		url: "http://bikewien.herokuapp.com",
 		id: "works1",
-		specs: "During my web developer studies I created this project with expected results, which was controlled by my tutor and mentor. The idea was to create a fully functional application to sell bikes online with a safe payment method, create accounts for users and have the ability to search and comment on products.",
-		tools: "Ruby on Rails etc."
+		specs: "During my web developer studies I created this project with expected results, which was controlled by my tutor and mentor. The goal was to create a fully functional application to sell bikes online with a safe payment method, create accounts for users and have the ability to search and comment on products.",
+		tools: "The app was created with Ruby on Rails, you find <a href='https://github.com/szabogergely07/MyFirstApp2.0' target='_blank'>HERE</a> all the tools I used. The most challenging was implementing ActionCable and the most liked was performance optimization."
 	},
 	{
 		title: "Blog Website",
 		pic: "img/newsblog.jpg",
 		url: "http://newsblog.herokuapp.com",
-		id: "works2"
+		id: "works2",
+		specs: "A basic blog website with a possibility to create new blog posts with a click. Tags and comments are also a part of this site.",
+		tools: "Ruby on Rails app with basic gems, like cancancan or devise."
 	},
 	{
 		title: "NailStudio",

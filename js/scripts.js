@@ -119,6 +119,14 @@ $(".form-control").css("border", "2px solid grey");
         return false;
     });
 
+
+    $(".arrow-down").click(function(e){
+      $('html, body').animate({
+       scrollTop: $($(this).attr('href')).offset().top
+      }, 1000);
+   });
+
+
  //STELLAR
  $(window, 'body').stellar({
     horizontalOffset: 0,
@@ -160,6 +168,7 @@ $('#mywork').append("\
     </div>\
   </div>\
 	");
+
 var images = $('#mywork img');
 if (i%2 === 0) {
 $(images[i]).css('border', '2px solid black');
