@@ -12,14 +12,16 @@ var works = [
 		pic: "img/newsblog.jpg",
 		url: "http://newsblog.herokuapp.com",
 		id: "works2",
-		specs: "A basic blog website with a possibility to create new blog posts with a click. Tags and comments are also a part of this site.",
-		tools: "Ruby on Rails app with basic gems, like cancancan or devise."
+		specs: "A responsive blog website with user registration and a possibility to create new blog posts with a click. Tags and comments are also a part of this site.",
+		tools: "Ruby on Rails app with basic gems, like cancancan or devise, plus acts-on-taggable. Currently users can register and able to create new posts with admin rights. Comments feature is being also created. The template is from W3layouts."
 	},
 	{
 		title: "NailStudio",
 		pic: "img/nailweb.jpg",
 		url: "http://pearle-nail.bitballoon.com/",
-		id: "works3"
+		id: "works3",
+		specs: "Useful and clean portfolio page for a Naildesigner.",
+		tools: "HTML and CSS have only been used, the theme is from Bootstrapious."
 	},
 	{
 		title: "Calculator",
