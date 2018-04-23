@@ -24,10 +24,12 @@ var works = [
 		tools: "HTML and CSS have only been used, the theme is from Bootstrapious."
 	},
 	{
-		title: "Calculator",
-		pic: "img/calculator2.png",
-		url: "http://greg-calculator.bitballoon.com",
-		id: "works4"
+		title: "Laravel App",
+		pic: "img/laravel.png",
+		url: "http://gregslaravelapp.herokuapp.com",
+		id: "works4",
+		specs: "Next to Ruby I am interested in the Php language too, so this project is my showcase for a fully working Laravel application, it manages users, posts, categories, comments. It is under construction.",
+		tools: "Php with Laravel Homestead, PhpMyAdmin for MySQL"
 	},
 	{
 		title: "VR Scene",

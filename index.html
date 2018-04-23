@@ -64,6 +64,9 @@
           <li class="pull-right">
             <a href="#mywork">PROJECTS</a>
           </li>
+          <li class="pull-right">
+            <a href="#currentProject">CURRENT PROJECT</a>
+          </li>
           <li class="pull-right" id="aboutMe"><a href="#about">ABOUT ME</a></li>
         </ul>
       </nav><!-- end nav -->
@@ -138,7 +141,7 @@
           Have a look at my actual projects I am working on!<br>
           </p>
           </h3>
-          <p><a href="#mywork" class="arrow-down"><button type="button" class="btn btn-default">My Projects &raquo;</button></a></p>
+          <p><a href="#currentProject" class="arrow-down"><button type="button" class="btn btn-default">My Projects &raquo;</button></a></p>
           <h2>News</h2>
           <h3>WeAreDevelopers Conference 2017 was a great experience!<br>
           See you at WeAreDevelopers World Congress 2018!</h3>
@@ -229,8 +232,67 @@
       </div>
     </div><br><!--  end about -->
     
+
+    <div class="container" id="currentProject">
+
+    <div class="container anchor title-center" id="">
+      <h1> >> The current project I am working on << </h1>
+    </div>
+
+    <div class="container col-sm-12">
+     
+        <a class="work-img">
+          <img class="img-responsive project-images" src="img/laravel.png">
+          <span class="info"><p class="proj-title">Project:</p>"Laravel App"</span>
+        <div>
+          <button type="button" class="btn btn-default btn-lg col-sm-12" id="modalButton" data-toggle="modal" data-target="#modalExample">
+          Follow my progress diary, click here!
+        </button>
+        </div>
+        </a>
+        
+    
+        <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">Laravel App</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Specs and goals</h4>
+                <p class="modal-project">Next to Ruby I am interested in the Php language too, so this project is my showcase for a fully working Laravel application, it manages users, posts, categories, comments. It is under construction, but you can follow my work. </p>
+                <hr>
+                <h4>Tools and methods used</h4>
+                <p class="modal-project">My tools I am using: Php with Laravel Homestead, PhpMyAdmin for MySQL, Heroku for production</p>
+                <hr>
+                <h4>Progress</h4>
+                <p class="modal-project">You can test my app in production if you login <a href="http://gregslaravelapp.herokuapp.com/login" target="_blank">HERE</a> with these credentials:<br>Email: greg@greg.com / Password: greg123 / Then click on Admin <br>
+                The admin area was created first for the application. Here we can see the registered users, we can authorize them to be admin, so have full access. We can create posts and add a category to them. I am starting notes not from the very beginning, you can check the previous progress on my GitHub account. <br>
+                10.04.2018 - Deploying to Heroku with creating a ClearDB Mysql databse, as I am running on Mysql in development. Here we have to create a different database.php file or the file with different settings for the connection to the database. I also created a partial for error messages by creating user/post etc.. <br>
+                11.04. - In development I created a photo upload section, but on development I would need to start using Amazon Web Services (AWS) to store files as it is not possible on Heroku. I decided not to do this, for now I am using weblinks to show pictures and later on I will setup AWS.<br>
+                12-14.04. - I am getting an error message from the browser in development: "The page has expired". Solution: change session driver to database instead of file in .env file.<br>Delete User function and middleware authorization (Admin) added.<br>
+                18.04. - Flash messages added to CRUD and custom 404 page to view. Posts controller has been created, routes/views/model have been set.<br>Problem in dev: 'failed to open stream: Permission denied'<br>Solution: There is a permission problem in storage, the command 'chmod -R 777 app/storage' helps.<br>
+                19.04 - PostRequest added for posts form validation. Categories CRUD is ready.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+    <br>
+
+
+
     <div class="container anchor title-center" id="mywork">
-      <h1>My Work</h1>
+      <h1>My Projects</h1>
       <h3>Click on the project to open it or click on Details to see how I created it</h3>
     </div>
 
