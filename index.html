@@ -158,16 +158,13 @@
             <div id="map"></div>
           </div><br>
 
+           <!-- LinkedIn profile -->
+          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="gergely-szabo-web-developer"><a class="LI-simple-link" href='https://at.linkedin.com/in/gergely-szabo-web-developer?trk=profile-badge' target="_blank">Gergely Szabo</a></div><br>
+
 
           <!-- Github account -->
-          <p id="social-contact"><a href="https://github.com/szabogergely07" target="_blank" data-toggle="tooltip" data-placement="top" title="My GitHub Account"><img src="img/github_logo.png" width="30%"></a>
+          <p id="social-contact"><a href="https://github.com/szabogergely07" target="_blank" data-toggle="tooltip" data-placement="top" title="My GitHub Account"><img src="img/GitHub_Logo.png" width="30%"></a>
           </p>
-
-          <!-- LinkedIn profile -->
-          <p id="social-contact"><a href="https://at.linkedin.com/pub/gergely-szabo/25/501/a16" target="_blank" data-toggle="tooltip" data-placement="top" title="My LinkedIn Profile">
-          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="35%" border="0" alt="View Gergely Szabo's profile on LinkedIn">
-          </a>
-          </p><br>
 
           <p>
             <button type="button" class="btn btn-default"><a href="#contact-form" class="arrow-down">Contact form &raquo;</a>
@@ -270,13 +267,14 @@
                 <hr>
                 <h4>Progress</h4>
                 <p class="modal-project">You can test my app in production if you login <a href="http://gregslaravelapp.herokuapp.com/login" target="_blank">HERE</a> with these credentials:<br>Email: greg@greg.com / Password: greg123 / Then click on Admin <br>
-                The admin area was created first for the application. Here we can see the registered users, we can authorize them to be admin, so have full access. We can create posts and add a category to them. I am starting notes not from the very beginning, you can check the previous progress on my GitHub account. <br>
+                The admin area was created first for the application. Here we can see the registered users, we can authorize them to be admin, so have full access. We can create posts and add a category to them. I am starting notes not from the very beginning, you can check the previous progress on my GitHub account. <hr>
                 10.04.2018 - Deploying to Heroku with creating a ClearDB Mysql databse, as I am running on Mysql in development. Here we have to create a different database.php file or the file with different settings for the connection to the database. I also created a partial for error messages by creating user/post etc.. <br>
                 11.04. - In development I created a photo upload section, but on development I would need to start using Amazon Web Services (AWS) to store files as it is not possible on Heroku. I decided not to do this, for now I am using weblinks to show pictures and later on I will setup AWS.<br>
                 12-14.04. - I am getting an error message from the browser in development: "The page has expired". Solution: change session driver to database instead of file in .env file.<br>Delete User function and middleware authorization (Admin) added.<br>
                 18.04. - Flash messages added to CRUD and custom 404 page to view. Posts controller has been created, routes/views/model have been set.<br>Problem in dev: 'failed to open stream: Permission denied'<br>Solution: There is a permission problem in storage, the command 'chmod -R 777 app/storage' helps.<br>
                 19.04 - PostRequest added for posts form validation. Categories CRUD is ready.<br>
-                23.04 - Comment model and controller have been created with view and routes. View's being made dynamic.
+                23.04 - Comment model and controller have been created with view and routes. View's being made dynamic.<br>
+                21.05 - Creating sample users with factory seeding. I had to include the 'faker' dependency in composer.json in 'require' section and update composer in heroku bash. Then seeding has worked.
                 </p>
               </div>
               <div class="modal-footer">
@@ -430,11 +428,13 @@
 
 <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
   
- <script src="js/work.js"></script>
- <script src="js/scripts.js"></script>
+<script src="js/work.js"></script>
+<script src="js/scripts.js"></script>
 
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQdTHtnBC3BO3Us71cTLGoQOF7oqdpesI&callback=initMap"
-    async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQdTHtnBC3BO3Us71cTLGoQOF7oqdpesI&callback=initMap"
+  async defer></script>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
   </body>
 </html>
