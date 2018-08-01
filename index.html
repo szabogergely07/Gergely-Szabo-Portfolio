@@ -131,7 +131,7 @@
       <div class="row container" id="introblock">
         <div class="col-sm-4 col-xs-12 profile-text">
           <h2>About Me</h2>
-            <h3><p>After my information science and history studies I explored my abilities and I gained new skills in the areas of management, customer relationship and supply chain. Now I am on the way to become a professional full stack web developer, working with HTML, JavaScript and Ruby on Rails. My purpose is to make the life of people, companies, organizations easier with useful and clear coding.</p>
+            <h3><p>After my information science and history studies I explored my abilities and I gained new skills in the areas of management, customer relationship and supply chain. Now I am on the way to become a professional back-end web developer, working with PHP, MySQL, HTML&CSS and JavaScript. I have also an experience with Ruby on Rails too. My purpose is to make the life of people, companies, organizations easier with useful and clear coding.</p>
             </h3>
           <p><a href="#about" class="arrow-down"><button type="button" class="btn btn-default">More about me &raquo;</button></a></p>
         </div><!-- /col -->
@@ -185,7 +185,7 @@
           </div> <!-- end about-maintext -->
         </div>
         <div class="col-xs-12" id="story-intro-2">
-          <div class="profile-text"><h3>I studied history and information science, but soon after graduation I moved to London and I lived there for 5 years, working in hospitality and in logistics. This decision led me into some new opportunities and helped me to meet many great people and enjoy new experiences. I was always interested in programming, but since I moved to Vienna, I finished a 6 month intensive web development course and I work every day to get better and improve my technical skills.</h3>
+          <div class="profile-text"><h3>I studied history and information science, but soon after graduation I moved to London and I lived there for 5 years, working in hospitality and in logistics. This decision led me into some new opportunities and helped me to meet many great people and enjoy new experiences. I was always interested in coding, but since I moved to Vienna in 2015, I finished 2 intensive web development courses and I work every day to get better and improve my technical skills.</h3>
           </div>
         </div>
       </div>
@@ -233,37 +233,97 @@
     <div class="container" id="currentProject">
 
     <div class="container anchor title-center" id="">
-      <h1> >> The current project I am working on << </h1>
+      <h1> >> Projects I am working on right now << </h1>
     </div>
 
-    <div class="container col-sm-12">
-     
-        <a class="work-img">
-          <img class="img-responsive project-images" src="img/laravel.png">
-          <span class="info"><p class="proj-title">Project:</p>"Laravel App"</span>
-        <div>
-          <button type="button" class="btn btn-default btn-lg col-sm-12" id="modalButton" data-toggle="modal" data-target="#modalExample">
-          Follow my progress diary, click here!
+  
+    <div class="row">
+
+      <!-- Sportbuddy project -->
+      <div class="container col-sm-6">
+        <a href="https://sportbuddies.000webhostapp.com/sportbuddy" target="_blank" class="work-img">
+          <img class="img-responsive project-images" src="img/sport-dark.png">
+          <span class="info"><p class="proj-title">Project:</p>"PHP/Mysql project with self-developed framework"</span>
+        
+        </a>
+        <div class="work-img">
+          <button type="button" class="btn btn-default btn-lg col-sm-12" id="modalButton" data-toggle="modal" data-target="#sportbuddy">
+          For the details click here!
         </button>
         </div>
-        </a>
-        
-    
-        <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+        <div class="modal fade" id="sportbuddy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLongTitle">Laravel App</h2>
+                <h2 class="modal-title" id="exampleModalLongTitle">SportBuddy</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <h4>Specs and goals</h4>
-                <p class="modal-project">Next to Ruby I am interested in the Php language too, so this project is my showcase for a fully working Laravel application, it manages users, posts, categories, comments. It is under construction, but you can follow my work. </p>
+                <p class="modal-project">
+                  I developed this application without a PHP framework. My goal was to fully understand every aspect of an MVC (Model-View-Controller), so I got a lot of experience. The application is working and the idea was to create a webapp to help people to find a buddy if they want to do some sport, but they are alone. I've built in authorization and authentication, a normal user can register, login, create an event, update own userdata, update/delete own events, join/leave or make a comment on an event. For admin there is extra space to change everyone's details or even see events already expired.
+                </p>
                 <hr>
                 <h4>Tools and methods used</h4>
-                <p class="modal-project">My tools I am using: Php with Laravel Homestead, PhpMyAdmin for MySQL, Heroku for production</p>
+                <p class="modal-project">
+                  Front-end: HTML&CSS, Javascript, Bootstrap
+                  <br>
+                  Back-end: PHP 7.1, MySQL, XAMPP, phpMyAdmin, MySQL Workbench
+                  <br>
+                  Tools: Composer autoload, SimpleRouter (skipperbent), phpMailer, own session class, own validation class
+                </p>
+                <hr>
+                <h4>Progress</h4>
+                <p class="modal-project">
+                  The app is working, however is being developed continuously. Right now I am adding a function to send a welcome email to user who registers.
+                  <br>
+                  You can test my app if you register: <a href="https://sportbuddies.000webhostapp.com/sportbuddy" target="_blank">HERE</a>
+                  <br>
+                  or you can find it on GitHub <a href="https://github.com/szabogergely07/sportbuddy" target="_blank">HERE</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- Laravel blog project -->
+    <div class="container col-sm-6">
+     
+        <a class="work-img">
+          <img class="img-responsive project-images" src="img/laravel.png">
+          <span class="info"><p class="proj-title">Project:</p>"Laravel Blog App"</span>
+       
+        </a>
+       
+         <div class="work-img">
+          <button type="button" class="btn btn-default btn-lg col-sm-12" id="modalButton" data-toggle="modal" data-target="#modalExample">
+          Follow my progress diary, click here!
+        </button>
+        </div> 
+    
+        <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">Laravel Blog App</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Specs and goals</h4>
+                <p class="modal-project">This project is my showcase for a fully working Laravel application, it manages users, posts, categories, comments. It is under construction, but you can follow my work. </p>
+                <hr>
+                <h4>Tools and methods used</h4>
+                <p class="modal-project">Php with Laravel Homestead, PhpMyAdmin for MySQL, Heroku for production</p>
                 <hr>
                 <h4>Progress</h4>
                 <p class="modal-project">You can test my app in production if you login <a href="http://gregslaravelapp.herokuapp.com/login" target="_blank">HERE</a> with these credentials:<br>Email: greg@greg.com / Password: greg123 / Then click on Admin <br>
@@ -285,6 +345,7 @@
         </div>
     </div>
   </div>
+</div>
 
 
     <br>
