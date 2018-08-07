@@ -348,6 +348,10 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative; /* is needed for .info position: absolute to work */
 }
 
+.modal-open .modal,.btn,a:focus{
+    outline:none!important
+}
+
 .info {
   position: absolute; /* let's us move the text around and not worry about the image */
   top: 15%; /* position the text 15% away from the top */
