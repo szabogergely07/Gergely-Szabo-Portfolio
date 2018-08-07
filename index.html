@@ -372,8 +372,8 @@
       <div class="container row" id="work">
          <!-- Contact Form -->
         <div class="col-xs-12" id="contact-form">
-          <form action="http://formspree.io/szabogergely07@gmail.com" class="form-horizontal">
-            <input type="hidden" value="submit" name="submit">
+          <form action="http://formspree.io/szabogergely07@gmail.com" method="POST" class="form-horizontal">
+            
             <div class="form-group">
               <label class="control-label col-xs-2" for="name">Name:</label>
                 <div class="col-sm-8"><input type="text" name="name" class="form-control name-box" placeholder="Enter your name" title="George Washington"></div>
@@ -402,7 +402,7 @@
             <div class="form-group">
               <label class="control-label col-sm-2"></label>
               <div class="col-sm-4">
-                <button type="submit" class="btn btn-success" id="submit-button">Submit</button>
+                <input type="submit" value="Send" class="btn btn-success" id="submit-button">
               </div>
             </div>
           </form>
