@@ -273,7 +273,7 @@
                   <br>
                   Back-end: PHP 7.1, MySQL, XAMPP, phpMyAdmin, MySQL Workbench
                   <br>
-                  Tools: Google Maps API, Composer autoload, SimpleRouter (skipperbent), phpMailer, own session class, own validation class
+                  Tools: Google Maps API, Composer autoload, SimpleRouter (skipperbent), SendGrid, own session class, own validation class
                 </p>
                 <hr>
                 <h4>Progress</h4>
@@ -299,14 +299,14 @@
     <div class="container col-sm-6">
      
         <a class="work-img">
-          <img class="img-responsive project-images" src="img/laravel.png">
-          <span class="info"><p class="proj-title">Project:</p>"Laravel Blog App"</span>
+          <img class="img-responsive project-images" src="https://www.addwebsolution.com/sites/default/files/styles/blog_detail_page/public/2017-11/Laravel-APi.jpg?itok=cjpiv4g7">
+          <span class="info"><p class="proj-title">Project:</p>"TodoList API"</span>
        
         </a>
        
          <div class="work-img">
           <button type="button" class="btn btn-default btn-lg col-sm-12" id="modalButton" data-toggle="modal" data-target="#modalExample">
-          Follow my progress diary, click here!
+          A RESTful API, powered by Laravel
         </button>
         </div> 
     
@@ -314,29 +314,25 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLongTitle">Laravel Blog App</h2>
+                <h2 class="modal-title" id="exampleModalLongTitle">TodoList API</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <h4>Specs and goals</h4>
-                <p class="modal-project">This project is my showcase for a fully working Laravel application, it manages users, posts, categories, comments. It is under construction, but you can follow my work. </p>
+                <p class="modal-project">The idea is to create an API with full CRUD functionality. I did this through a simple todo list, you can create a todo item with title, description, category and a date. Connected with a simple HTML/JS file you can get the data and create new todo item. The API is deployed on: https://gregstodoapi.herokuapp.com/todo <br>
+                You can test it <a href="https://szabogergely07.github.io/todolistapp" target="_blank">HERE</a> <br>
+                The goal is to be fully functional with authentication, which is being developed now.
+                </p>
                 <hr>
                 <h4>Tools and methods used</h4>
-                <p class="modal-project">Php with Laravel Homestead, PhpMyAdmin for MySQL, Heroku for production</p>
-                <hr>
+                <p class="modal-project">The API runs on Laravel 5.7.3, the database is MySQL, the application connects to the API with AJAX and uses JSON data</p>
+               <!--  <hr>
                 <h4>Progress</h4>
-                <p class="modal-project">You can test my app in production if you login <a href="http://gregslaravelapp.herokuapp.com/login" target="_blank">HERE</a> with these credentials:<br>Email: greg@greg.com / Password: greg123 / Then click on Admin <br>
-                The admin area was created first for the application. Here we can see the registered users, we can authorize them to be admin, so have full access. We can create posts and add a category to them. I am starting notes not from the very beginning, you can check the previous progress on my GitHub account. <hr>
-                10.04.2018 - Deploying to Heroku with creating a ClearDB Mysql databse, as I am running on Mysql in development. Here we have to create a different database.php file or the file with different settings for the connection to the database. I also created a partial for error messages by creating user/post etc.. <br>
-                11.04. - In development I created a photo upload section, but on development I would need to start using Amazon Web Services (AWS) to store files as it is not possible on Heroku. I decided not to do this, for now I am using weblinks to show pictures and later on I will setup AWS.<br>
-                12-14.04. - I am getting an error message from the browser in development: "The page has expired". Solution: change session driver to database instead of file in .env file.<br>Delete User function and middleware authorization (Admin) added.<br>
-                18.04. - Flash messages added to CRUD and custom 404 page to view. Posts controller has been created, routes/views/model have been set.<br>Problem in dev: 'failed to open stream: Permission denied'<br>Solution: There is a permission problem in storage, the command 'chmod -R 777 app/storage' helps.<br>
-                19.04 - PostRequest added for posts form validation. Categories CRUD is ready.<br>
-                23.04 - Comment model and controller have been created with view and routes. View's being made dynamic.<br>
-                21.05 - Creating sample users with factory seeding. I had to include the 'faker' dependency in composer.json in 'require' section and update composer in heroku bash. Then seeding has worked.
-                </p>
+                <p class="modal-project">
+
+                </p> -->
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
