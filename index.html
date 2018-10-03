@@ -193,8 +193,9 @@
       <!-- Resume -->
       <div class="container row">
         <div class="modal-button">
-          <div class="col-xs-6 col-md-3"><button class="btn btn-primary resume-button" data-toggle="modal" data-target=".bs-example-modal-lg">View my Resume</button></div>
-          <div class="col-xs-6 col-md-3"><button class="btn btn-primary resume-button" data-toggle="modal" data-target=".bs-cert-modal-lg">View my Certificate</button></div>
+          <div class="col-xs-4 col-md-2"><button class="btn btn-primary resume-button" data-toggle="modal" data-target=".bs-example-modal-lg">View my Resume</button></div>
+          <div class="col-xs-4 col-md-2"><button class="btn btn-primary resume-button" data-toggle="modal" data-target="#cert1">View my CF Certificate</button></div>
+          <div class="col-xs-4 col-md-2"><button class="btn btn-primary resume-button" data-toggle="modal" data-target="#cert2">View my WIFI Certificate</button></div>
                 <!-- Small modal -->
           <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -210,15 +211,29 @@
             </div>
           </div>
 
-          <div class="modal fade bs-cert-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal fade bs-cert-modal-lg" id="cert1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Web Developer Certificate</h4>
+                  <h4 class="modal-title" id="myModalLabel">HTML&CSS, JS, RubyonRails Certificate</h4>
                 </div>
                 <div class="modal-body">
                   <embed id="modalembed" src="img/cert.pdf">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade bs-cert-modal-lg" id="cert2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">PHP / MySQL Developer Certificate</h4>
+                </div>
+                <div class="modal-body">
+                  <embed id="modalembed" src="img/certphp.pdf">
                 </div>
               </div>
             </div>
